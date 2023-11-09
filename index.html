@@ -12,14 +12,15 @@
     <form action="" >
 
         <label for="">Type any number</label>
-        <input type="text" placeholder="8" id="num1">
+        <input type="text" placeholder="8" oninput="sum()" id="num1" >
 
         <label for="">Type any number</label>
-        <input type="text" placeholder="8"  id="num2">
+        <input type="text" placeholder="2" oninput="sum()"  id="num2">
 
-        <label for="" id="display"></label>
+        <h2> Sum : <span id="display" > Show Answer </span> </h2>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <button type="submit" onclick="sum()"  class="btn btn-primary">Submit</button>
     </form>
     
 
