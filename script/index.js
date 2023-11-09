@@ -1,16 +1,11 @@
-let numb1 = document.getElementById('num1')
-let numb2 = document.getElementById('num2')
+const btnAdd = document.querySelector('[data-submit');
+const labelOutput = document.querySelector('#output');
 
-let displayVal = document.getElementById('display')
-
-function sum(){
-    const sumOfTwoNumbers = +numb1.value + +numb2.value;
-
-    console.log(displayVal.display = sumOfTwoNumbers)
-
-    displayVal.innerHTML = sumOfTwoNumbers;
+function addition(){
+    let number1 = document.getElementById('num1').value;
+    let number2 = document.getElementById('num2').value;
+    let sum = +number1 + +number2;
+    labelOutput.textContent = sum
 }
 
-
-
-sum();
+btnAdd.addEventListener('click', addition)
